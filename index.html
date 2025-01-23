@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Egi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom right, #f8fafc, #eef2f3);
+        }
+
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1e3c72;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #2a5298;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin: 15px;
+            color: #2a5298;
+        }
+
+        .project p {
+            font-size: 1rem;
+            margin: 15px;
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #eef2f3;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            color: #2a5298;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .contact a .icon {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>| Web Developer |</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Egi, a passionate web developer with expertise in creating interactive and responsive websites. My goal is to build solutions that are both visually appealing and functionally robust.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>An e-commerce platform for local businesses to manage their online presence effectively.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A responsive digital invitation with 3D effects and reservation features.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A custom cashier application for MSMEs to manage daily transactions seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to collaborate or have any questions, feel free to reach out to me.</p>
+        <p>
+            <a href="mailto:egi@example.com">
+                <span class="icon">📧</span>Email: egi@example.com
+            </a>
+        </p>
+        <p>
+            <a href="https://wa.me/123456789" target="_blank">
+                <span class="icon">📱</span>WhatsApp: 123-456-789
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Egi's Portfolio</p>
+    </footer>
+</body>
+</html>
